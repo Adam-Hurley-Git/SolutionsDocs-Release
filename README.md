@@ -65,14 +65,14 @@ documentation still generates — you just lose the SharePoint step.
 ## Uninstall
 
 Delete `%LOCALAPPDATA%\Programs\SolutionsDocs` and the Desktop shortcut.
-Optionally also `%APPDATA%\SolutionsDocs`, which holds cached connector icons
-and saved settings.
+Optionally also `%APPDATA%\SolutionsDocs` (cached connector icons and saved
+settings) and `%LOCALAPPDATA%\SolutionsDocs` (run logs).
 
 ---
 
 ## A note on logs
 
-Each run writes two logs, under `%APPDATA%\SolutionsDocs\PipelineUI\Logs`:
+Each run writes two logs, under `%LOCALAPPDATA%\SolutionsDocs\PipelineUI\logs`:
 
 - **`raw-local.log`** — may contain real tenant data: site URLs, list and column
   names, sample values. **Don't share this file.**
